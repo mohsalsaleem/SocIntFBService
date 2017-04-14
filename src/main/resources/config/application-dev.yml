@@ -150,3 +150,7 @@ jhipster:
 # ===================================================================
 
 application:
+    facebook:
+        version: v2.8
+        app-id: 421643154863157
+        app-secret: 3a617cb04ce82f91a9179a8faa66881b
