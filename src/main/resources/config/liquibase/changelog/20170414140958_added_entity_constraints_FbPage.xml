@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+    <!--
+        Added the constraints for entity FbPage.
+    -->
+    <changeSet id="20170414140958-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="cover_id"
+                                 baseTableName="fb_page"
+                                 constraintName="fk_fb_page_cover_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="cover"/>
+
+    </changeSet>
+</databaseChangeLog>
